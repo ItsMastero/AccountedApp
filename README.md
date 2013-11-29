@@ -1,4 +1,4 @@
-AccountedApp
+ACCOUNTED: App release
 ============
 
-Official app of Accounted
+This is the official app of Accounted, created for Android.
