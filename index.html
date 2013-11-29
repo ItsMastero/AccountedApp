@@ -27,7 +27,7 @@ if (minutes < 10)
 }
 
 //Datum van vandaag
-document.write("<strong>" + dag + "-" + maand + "-2013 | " + uur + ":" + minutes + "<center>" + " Welkom bij ACCOUNTED! Met dit programma kan je allerlei verschillende opdrachten doen. Veel plezier! " + "</center></strong><BR><HR><BR>");
+document.write("<strong>" + dag + "-" + maand + "-2013 | " + uur + ":" + minutes + "<center>" + " ACCOUNTED ANDROID EDITION 1.0 " + "<BR>" + "Let the accounting begin!" + "</center></strong><BR><HR><BR>");
 
 //variabeledeclaratie
 var input, btw, btwinvoer, btw21, btw6;
@@ -105,7 +105,7 @@ function berekeningFactuur() {
 	
 	nietcontantebetaling=contantebetaling+financielekortingbedrag;
 	
-	document.getElementById("text3").innerHTML="<strong>DE FACTUURBEREKENING</strong><BR><HR>Het basisbedrag is <strong>" + basisbedrag + "</strong>, hiervan trekken we de handelskorting af van <strong>" + handelskortingbedrag + "</strong> met als subtotaal <strong>" + subtotaal1 + "</strong>.<BR><BR> Dan tellen we de kosten van <strong>" + kosten + "</strong> er bij op, waardoor we <strong>" + subtotaal2 + "</strong> uitkomen.<BR><BR> De financiele korting bedraagt <i>" + financielekorting + "</i>, omgerekend in euro <strong>" + financielekortingbedrag + "</strong>, waardoor we de maatstaf van Heffing uitkomen met als bedrag <strong>" + subtotaal3 + "</strong>.<BR><BR> Dan tellen we de btw <strong>" + btwbedrag + "</strong> erbij op en krijgen we als subtotaal <strong>" + contantebetaling + "</strong>. Dit is het bedrag als de klant binnen de zoveel dagen betaalt.<BR><BR> Doet hij dat niet, dan tellen we de financiele korting van <strong>" + financielekortingbedrag + "</strong> op bij ons bedrag en krijgen we als uitkomst <strong>" + nietcontantebetaling + "</strong>.<BR><BR><BR><BR><BR><HR><strong>CONTANTE BETALING = " + contantebetaling + "<BR>NIET-CONTANTE BETALING = " + nietcontantebetaling + "</strong><HR>";
+	document.getElementById("text3").innerHTML="<strong>DE FACTUURBEREKENING</strong><BR><HR>Het basisbedrag is <strong>" + basisbedrag + "</strong>, hiervan trekken we de handelskorting af van <strong>" + handelskortingbedrag + "</strong> met als subtotaal <strong>" + subtotaal1 + "</strong>.<BR><BR> Dan tellen we de kosten van <strong>" + kosten + "</strong> er bij op, waardoor we <strong>" + subtotaal2 + "</strong> uitkomen.<BR><BR> De financiele korting bedraagt <i>" + financielekorting + "</i> procent, omgerekend in euro <strong>" + financielekortingbedrag + "</strong>, waardoor we de maatstaf van Heffing uitkomen met als bedrag <strong>" + subtotaal3 + "</strong>.<BR><BR> Dan tellen we de btw <strong>" + btwbedrag + "</strong> erbij op en krijgen we als subtotaal <strong>" + contantebetaling + "</strong>. Dit is het bedrag als de klant binnen de zoveel dagen betaalt.<BR><BR> Doet hij dat niet, dan tellen we de financiele korting van <strong>" + financielekortingbedrag + "</strong> op bij ons bedrag en krijgen we als uitkomst <strong>" + nietcontantebetaling + "</strong>.<BR><BR><BR><BR><BR><HR><strong>CONTANTE BETALING = " + contantebetaling + "<BR>NIET-CONTANTE BETALING = " + nietcontantebetaling + "</strong><HR>";
 																						  
 
 }
@@ -197,7 +197,7 @@ document.getElementById("text6").innerHTML="Ongeldige input. Herlaad de pagina e
 //-->
 </script>
 
-	<div id="wrapper">
+	
 		 <div id="Buttonstyles">
 			<button onClick="btwBerekenen()" class="buttonstyle">Btw berekenen</button>
 			<button onClick="bedragenOptellen()" class="buttonstyle">Bedragen optellen</button>
@@ -205,6 +205,7 @@ document.getElementById("text6").innerHTML="Ongeldige input. Herlaad de pagina e
 			<button onClick="stelselsRekeningen()" class="buttonstyle">Rekeningen opzoeken</button>
 			<button onClick="berekenenIntrest()" class="buttonstyle">Intrest berekenen</button>
 		 </div>
+     <div id="wrapper">
 		 <div id="row1" class="row">
 			 <div id="text1" class="text">
 				Hier komt je btw-bedrag!
